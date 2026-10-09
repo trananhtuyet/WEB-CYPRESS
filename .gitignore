@@ -1,0 +1,12 @@
+node_modules/
+dist/
+build/
+.env
+backend/.env
+frontend/.env
+backend/uploads/
+cypress/screenshots/
+cypress/videos/
+coverage/
+*.log
+

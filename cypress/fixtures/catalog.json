@@ -1,0 +1,29 @@
+{
+  "categories": [
+    { "id": 1, "name": "Skincare" },
+    { "id": 2, "name": "Makeup" }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Radiance Glow Serum",
+      "price": 29.99,
+      "description": "Vitamin C serum for brighter skin.",
+      "image": "https://images.example.com/serum.jpg",
+      "stock": 25,
+      "category_id": 1,
+      "category": { "id": 1, "name": "Skincare" }
+    },
+    {
+      "id": 2,
+      "name": "Velvet Matte Lipstick",
+      "price": 19.5,
+      "description": "Long-lasting lipstick.",
+      "image": "https://images.example.com/lipstick.jpg",
+      "stock": 40,
+      "category_id": 2,
+      "category": { "id": 2, "name": "Makeup" }
+    }
+  ]
+}
+

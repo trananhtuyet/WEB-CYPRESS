@@ -1,0 +1,43 @@
+{
+  "name": "cosmetics-ecommerce-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "install:all": "npm install --prefix backend && npm install --prefix frontend && npm install",
+    "dev": "concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "seed": "npm run seed --prefix backend",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "cypress:run:chat": "cypress run --spec cypress/e2e/style-chat.cy.js",
+    "selenium:run": "node tests/selenium/run.js all",
+    "selenium:run:login": "node tests/selenium/run.js login",
+    "selenium:run:register-login": "node tests/selenium/run.js register-login",
+    "selenium:run:search": "node tests/selenium/run.js search",
+    "selenium:run:favorites": "node tests/selenium/run.js favorites",
+    "selenium:run:cart": "node tests/selenium/run.js cart",
+    "selenium:run:checkout": "node tests/selenium/run.js checkout",
+    "selenium:run:orders": "node tests/selenium/run.js orders",
+    "selenium:run:account": "node tests/selenium/run.js account",
+    "selenium:run:contact": "node tests/selenium/run.js contact",
+    "selenium:run:home-comment": "node tests/selenium/run.js home-comment",
+    "selenium:run:product-comment": "node tests/selenium/run.js product-comment",
+    "selenium:run:review": "node tests/selenium/run.js review",
+    "selenium:run:chat": "node tests/selenium/run.js style-chat",
+    "selenium:run:admin-login": "node tests/selenium/run.js admin-login",
+    "selenium:run:admin-dashboard": "node tests/selenium/run.js admin-dashboard",
+    "selenium:run:admin-orders": "node tests/selenium/run.js admin-orders",
+    "selenium:run:admin-vouchers": "node tests/selenium/run.js admin-vouchers",
+    "selenium:run:admin-overview": "node tests/selenium/run.js admin-overview",
+    "selenium:run:admin-users": "node tests/selenium/run.js admin-users",
+    "selenium:run:admin-contacts": "node tests/selenium/run.js admin-contacts",
+    "selenium:run:admin-reports": "node tests/selenium/run.js admin-reports",
+    "selenium:run:admin-payments": "node tests/selenium/run.js admin-payments",
+    "selenium:run:admin-settings": "node tests/selenium/run.js admin-settings",
+    "selenium:run:admin-support": "node tests/selenium/run.js admin-support"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "cypress": "14.3.1",
+    "selenium-webdriver": "^4.33.0"
+  }
+}
